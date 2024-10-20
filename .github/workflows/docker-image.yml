@@ -38,5 +38,5 @@ jobs:
       with:
         context: . # 如果你的Dockerfile不在根目录，请调整路径
         push: true
-        tags: ghcr.io/${{ github.repository }}/your-image:${{ github.sha }},ghcr.io/${{ github.repository }}/your-image:latest
+        tags: ghcr.io/${{ github.repository }}:${{ github.sha }},ghcr.io/${{ github.repository }}:latest
         platforms: linux/amd64,linux/arm64 # 指定支持的平台
